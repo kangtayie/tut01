@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포켓몬 팀 소개 연구소</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-music" src="bgm.mp3" loop autoplay></audio>
+
+    <div class="lab-container">
+        <img src="background.png" alt="연구소 배경" class="bg-image">
+
+        <h1 class="main-title">오늘의 포켓몬은 뭘까요?</h1>
+
+        <div class="monitor-screen">
+            <img id="character-silhouette" src="" alt="실루엣" class="character-img active">
+            <img id="character-color" src="" alt="컬러 이미지" class="character-img hidden">
+        </div>
+
+        <div id="info-panel" class="info-panel hidden">
+            <h1 id="member-name" class="member-name">이름</h1>
+            
+            <div class="skills-container">
+                <div class="skill-section">
+                    <h2 class="section-title strong">💪 강점 스킬</h2>
+                    <ul id="strengths-list" class="skill-list"></ul>
+                </div>
+                <div class="skill-section">
+                    <h2 class="section-title weak">⚠️ 약점 디버프</h2>
+                    <ul id="weaknesses-list" class="skill-list"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn" class="nav-btn">◀ 이전 팀원</button>
+            <button id="reveal-btn" class="action-btn">정체 확인하기!</button>
+            <button id="next-btn" class="nav-btn">다음 팀원 ▶</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
